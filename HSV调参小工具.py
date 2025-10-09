@@ -1,6 +1,6 @@
 import os
 current_path = os.path.abspath(os.path.dirname(__file__))
-filepath=os.path.join(current_path, '视频文件名字.avi')#放在该py文件同一目录下
+filepath=os.path.join(current_path, 'output.avi')#放在该py文件同一目录下
 '''
     这是一个逐帧掩膜的调参分析的程序
     请在上方区域输入视频的文件名
@@ -55,17 +55,18 @@ class Test():
         self.textExample = tk.Text(self.root, height=3)  # 创建文本输入框
         self.textExample.pack()  # 把Text放在window上面，显示Text这个控件
 
-        test = """
-    这是一个逐帧掩膜的调参分析的程序
-    请在上方空白区域输入视频的 绝对路径
-    之后点击运行（未知问题较为卡顿）
-    操作方法:(按键可长按）
-            Q:后退5帧 W:后退1帧 
-            E:前进1帧 R:前进5帧
-            ESC:退出程序
-丝滑版本请打开同目录下.py更改77行运行
-    YYJ -22/5/4
-                """
+        test = r"D:\朱天翔\华南理工大学\Github-clone\assignment1-basics-of-opencv-Aishiterus-z\res\output1.avi"
+        """
+            这是一个逐帧掩膜的调参分析的程序
+            请在上方空白区域输入视频的 绝对路径
+            之后点击运行（未知问题较为卡顿）
+            操作方法:(按键可长按）
+                    Q:后退5帧 W:后退1帧 
+                    E:前进1帧 R:前进5帧
+                    ESC:退出程序
+        丝滑版本请打开同目录下.py更改77行运行
+            YYJ -22/5/4
+                        """
 
         lb = tk.Label(self.root, text=test,  # 设置文本内容
                       width=30,  # 设置label的宽度：30
